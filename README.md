@@ -34,3 +34,6 @@ Machine Learning Based Malicious Network Traffic Detection Tool
 [WxPython](https://wxpython.org/)
 
 [scikit-learn](https://scikit-learn.org/stable/index.html)
+
+## Internals
+[Chapter 1 - Internals of NVAToolkit](Internals_of_NVAToolkit.md)
