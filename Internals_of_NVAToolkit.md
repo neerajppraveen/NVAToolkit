@@ -20,9 +20,9 @@ The user interacts with the main app server, which consists of a UI module. Ther
 
     Live packet capture and analysis
 
-In first mode, pcap files are forwarded to the features server via FSBM. FSBM stands for feature server binding module, which interacts with fetaures server and drops invalid pcap files. Communication between two servers is using the REST API. The feature server contains a cicflowmeter and a CSV Verification Module. CICFlowmeter converts pcap to a csv file, which contains 80 flow features. The CSV Verfication module drops irrelevent columns from pcap (e.g., source ip, dest ip, source port, and low_id—these factors are not relevant with respect to the ML model, but these features are printed if traffic is malicious). Then modified CSS was sent to the ML model, which predicts attacks, and it was displayed on the UI. 
+In first mode, pcap files are forwarded to the features server via FSBM (Feature server binding module), which interacts with fetaures server and drops invalid pcap files. Communication between two servers is using the REST API. The feature server consists cicflowmeter and CSV Verification Module. CICFlowmeter converts pcap to a csv file, which contains 80 flow features. The CSV Verfication module drops irrelevent columns from pcap (e.g., source ip, dest ip, source port, and low_id—these factors are not relevant with respect to the ML model, but these features are printed if traffic is malicious). Then modified CSV was sent to the ML model, which predicts type of attack and it was displayed on the UI. 
 
 In second mode, the Live Capture server captures traffic on an interface specified by the user at a specified time (default: 40 seconds). Then captured traffic is stored as pcap, then forward it into the feature server. The rest of the operation similar to the first mode.
 
 
-Author : Neeraj P Praveen (@neerajppraveen)
+
