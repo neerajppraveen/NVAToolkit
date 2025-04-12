@@ -19,7 +19,7 @@ Machine Learning Based Malicious Network Traffic Detection Tool
 
 - Analyze PCAP Files 
 - Live Packet Capture and Analysis
-- Scalable
+
 
 ## Dependencies
 
